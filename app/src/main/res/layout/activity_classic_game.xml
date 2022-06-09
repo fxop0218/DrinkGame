@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassicGameActivity">
+
+    <ImageView
+        android:id="@+id/ivPerosna"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="190dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <ImageView
+        android:id="@+id/ivPersonaN"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="190dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <ImageView
+        android:id="@+id/ivPositive"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivPerosna"
+        app:layout_constraintEnd_toEndOf="@+id/ivPerosna"
+        app:layout_constraintStart_toStartOf="@+id/ivPerosna"
+        app:srcCompat="@drawable/ic_baseline_check_24" />
+
+    <ImageView
+        android:id="@+id/ivNegative"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivPersonaN"
+        app:layout_constraintEnd_toEndOf="@+id/ivPersonaN"
+        app:layout_constraintStart_toStartOf="@+id/ivPersonaN"
+        app:srcCompat="@drawable/ic_baseline_cruz" />
+
+    <ImageView
+        android:id="@+id/ivDrink"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivPerosna"
+        app:layout_constraintStart_toEndOf="@+id/ivPerosna"
+        app:srcCompat="@drawable/ic_baseline_wine_bar_24" />
+
+    <ImageView
+        android:id="@+id/ivDrink2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivPersonaN"
+        app:layout_constraintEnd_toStartOf="@+id/ivPersonaN"
+        app:srcCompat="@drawable/ic_baseline_no_drinks_24" />
+
+    <Button
+        android:id="@+id/bContinueClassic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="@string/continuar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvClassic1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saldran_unas_preguntas_en_la_pantalla"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivPositive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvClassic2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="@string/las_personas_que_cumplan_perderan"
+        app:layout_constraintBottom_toTopOf="@+id/bContinueClassic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivDrink2" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Primeta pregunta"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bNextClassic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:text="@string/siguiente"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="623dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/bExitClassic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="200dp"
+        android:text="@string/salir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="623dp"
+        android:visibility="invisible"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

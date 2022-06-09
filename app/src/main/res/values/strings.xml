@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">DrinkG</string>
+    <string name="saldran_unas_preguntas_en_la_pantalla">Saldran unas preguntas en la pantalla</string>
+    <string name="las_personas_que_cumplan_perderan">las personas que cumplan perderan</string>
+    <string name="continuar">Continuar</string>
+    <string name="salir">Salir</string>
+    <string name="siguiente">Siguiente</string>
 </resources>
