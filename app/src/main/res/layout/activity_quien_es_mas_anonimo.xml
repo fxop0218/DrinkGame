@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.QuienEsMasAnonimoActivity">
+
+    <TextView
+        android:id="@+id/tvQeMAnEx2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="La persona con mayores botos saldra al final de la votacion "
+        app:layout_constraintBottom_toTopOf="@+id/bQEManonimoNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivAnonimoChange" />
+
+    <ImageView
+        android:id="@+id/ivAnonimoPersona1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivAnonimoChange"
+        app:layout_constraintEnd_toStartOf="@+id/ivAnonimoChange"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <ImageView
+        android:id="@+id/ivAnonimoPersona4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toEndOf="@+id/ivAnonimoChange"
+        app:layout_constraintTop_toBottomOf="@+id/ivAnonimoChange"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <ImageView
+        android:id="@+id/ivAnonimoPersona3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivAnonimoChange"
+        app:layout_constraintTop_toBottomOf="@+id/ivAnonimoChange"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <ImageView
+        android:id="@+id/ivAnonimoPersona2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivAnonimoChange"
+        app:layout_constraintStart_toEndOf="@+id/ivAnonimoChange"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <ImageView
+        android:id="@+id/ivAnonimoChange"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/bQEManonimoNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/ic_baseline_sync_24" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="¿Quien es mas? Anonimo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bQEManonimoStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Empezar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bQEManonimoNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Siguiente"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivAnonimoPhone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/ivAnonimoPersona4"
+        app:layout_constraintStart_toEndOf="@+id/ivAnonimoPersona2"
+        app:layout_constraintTop_toBottomOf="@+id/ivAnonimoPersona2"
+        app:srcCompat="@drawable/ic_baseline_smartphone_24" />
+
+    <TextView
+        android:id="@+id/tvQeMAnEx1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center"
+        android:text="Leer la pregunta en alto e ir pasando el telefono para selecionar a la persona que es mas probable"
+        app:layout_constraintBottom_toTopOf="@+id/ivAnonimoChange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tvQeMAnonimoQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/bQEManonimoStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Spinner
+        android:id="@+id/selectUsuario"
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/bQEManonimoStart"
+        app:layout_constraintEnd_toEndOf="@+id/tvQeMAnEx2"
+        app:layout_constraintStart_toStartOf="@+id/tvQeMAnEx2"
+        app:layout_constraintTop_toBottomOf="@+id/tvQeMAnEx2"
+        app:layout_constraintVertical_bias="0.494"
+        android:visibility="invisible"
+        tools:ignore="SpeakableTextPresentCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

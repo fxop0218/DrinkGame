@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DrinkG">
         <activity
+            android:name=".activity.QuienEsMasAnonimoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.QuienEsMasClassicActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.QuienEsMasActivity"
             android:exported="false" />
         <activity
