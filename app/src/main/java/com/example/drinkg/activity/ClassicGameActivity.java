@@ -1,4 +1,4 @@
-package com.example.drinkg;
+package com.example.drinkg.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.drinkg.R;
 
 public class ClassicGameActivity extends AppCompatActivity {
     private TextView tvExp1, tvExp2, tvQuestion;
@@ -43,6 +45,7 @@ public class ClassicGameActivity extends AppCompatActivity {
                 tvExp2.setVisibility(View.GONE);
                 bContinue.setVisibility(View.GONE);
                 ivPersona1.setVisibility(View.GONE);
+                ivPersona2.setVisibility(View.GONE);
                 ivGlass1.setVisibility(View.GONE);
                 ivGlass2.setVisibility(View.GONE);
                 ivCorrect.setVisibility(View.GONE);
@@ -57,7 +60,7 @@ public class ClassicGameActivity extends AppCompatActivity {
         bNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                //TODO hacer que salte a la siguiente pregunta
             }
         });
 

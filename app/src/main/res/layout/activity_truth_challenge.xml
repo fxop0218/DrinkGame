@@ -6,4 +6,127 @@
     android:layout_height="match_parent"
     tools:context=".activity.TruthChallengeActivity">
 
+    <ImageView
+        android:id="@+id/ivPersonaTruth"
+        android:layout_width="142dp"
+        android:layout_height="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <TextView
+        android:id="@+id/tvVerdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Verdad"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/ivPersonaTruth"
+        app:layout_constraintTop_toBottomOf="@+id/ivPersonaTruth" />
+
+    <TextView
+        android:id="@+id/tvReto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Reto"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ivPersonaTruth"
+        app:layout_constraintTop_toBottomOf="@+id/ivPersonaTruth" />
+
+    <ImageView
+        android:id="@+id/ivChangeTruth"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvReto"
+        app:layout_constraintEnd_toStartOf="@+id/tvReto"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvVerdad"
+        app:layout_constraintTop_toTopOf="@+id/tvReto"
+        app:srcCompat="@drawable/ic_baseline_swap_horiz_24" />
+
+    <TextView
+        android:id="@+id/tvInfoTruth"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Cada ronda el usuario podrá escoger una de las dos opciones"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvInfoTruth2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvInfoTruth2"
+
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Podras cambiar de verdad a reto o viceversa, pero solo una vez, depues de eso no podras volver a la pregunta anterior"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ivPersonaTruth"
+        app:layout_constraintEnd_toEndOf="@+id/ivPersonaTruth"
+        app:layout_constraintStart_toStartOf="@+id/ivPersonaTruth" />
+
+    <Button
+        android:id="@+id/bContinuarTruth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="@string/continuar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bTruthChallange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="Reto"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bContinuarTruth"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bTruthTruth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verdad"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/bTruthChallange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bTruthChallange" />
+
+    <Button
+        android:id="@+id/bTruthChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="Cambiar"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/bContinuarTruth"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bTruthContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continuar"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/bTruthChallange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bTruthChallange" />
 </androidx.constraintlayout.widget.ConstraintLayout>

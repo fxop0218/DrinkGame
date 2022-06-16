@@ -22,7 +22,7 @@
             android:name=".activity.TruthGameActivity"
             android:exported="false" />
         <activity
-            android:name=".ClassicGameActivity"
+            android:name=".activity.ClassicGameActivity"
             android:exported="false" />
         <activity
             android:name=".activity.SplashActivity"

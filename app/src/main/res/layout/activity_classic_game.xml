@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClassicGameActivity">
+    tools:context=".activity.ClassicGameActivity">
 
     <ImageView
         android:id="@+id/ivPerosna"
@@ -113,20 +113,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="200dp"
         android:text="@string/siguiente"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/bExitClassic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="623dp"
-        android:visibility="invisible"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/bExitClassic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="200dp"
+        android:layout_marginBottom="60dp"
         android:text="@string/salir"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="623dp"
-        android:visibility="invisible"/>
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
