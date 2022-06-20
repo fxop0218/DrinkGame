@@ -53,7 +53,6 @@
         android:id="@+id/tvInfoTruth"
         android:layout_width="265dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="Cada ronda el usuario podrá escoger una de las dos opciones"
         android:textSize="16sp"
@@ -61,11 +60,10 @@
         app:layout_constraintBottom_toTopOf="@+id/tvInfoTruth2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTruthChallengeTitleAct" />
 
     <TextView
         android:id="@+id/tvInfoTruth2"
-
         android:layout_width="273dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
@@ -129,4 +127,32 @@
         app:layout_constraintBottom_toBottomOf="@+id/bTruthChallange"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/bTruthChallange" />
+
+    <TextView
+        android:id="@+id/tvTruthChallengeTitleAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/verdad_o_reto_title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTruthChallangeQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/truthChallangeInformation"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/bContinuarTruth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTruthChallengeTitleAct" />
 </androidx.constraintlayout.widget.ConstraintLayout>

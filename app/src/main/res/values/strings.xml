@@ -5,4 +5,36 @@
     <string name="continuar">Continuar</string>
     <string name="salir">Salir</string>
     <string name="siguiente">Siguiente</string>
+    <string name="no_more">Ya no hay más preguntas :c ,manda tus propuestas desde la página de inicio</string>
+    <string name="verdad_o_reto_title">Verdad o reto</string>
+    <string name="verdad">Verdad</string>
+    <string name="reto">Reto</string>
+    <string name="truthChallangeInformation">Seleciona una de las dos opciones teniendo en cuenta que solo puedes cambiar una sola vez</string>
+
+    <string-array name="classicGame">
+        <item>Yo nunca me he cagado encima</item>
+        <item>yo nunca ejemplo</item>
+        <item>yo nunca ejemplo2</item>
+        <item>yo nunca ejemplo3</item>
+    </string-array>
+    <string-array name="QEMGame">
+        <item>Quien es mas perro</item>
+        <item>Quien es mas gato</item>
+        <item>Quien es mas 1o</item>
+        <item>Quien es mas 2o</item>
+    </string-array>
+    <string-array name="verdadGame">
+        <item>Quien a la persona mas mentirosa en esta sala</item>
+        <item>Ejemplo1</item>
+        <item>Ejemplo2</item>
+    </string-array>
+    <string-array name="retoGame">
+        <item>Quitate una prenda de ropa</item>
+        <item>Quitate una prenda de 1</item>
+        <item>Quitate una prenda de 2</item>
+    </string-array>
+    <string name="title_activity_set_users">setUsersActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>

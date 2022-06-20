@@ -45,7 +45,11 @@ public class QuienEsMasActivity extends AppCompatActivity {
         bAnonimo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                /*
+                Intent i = new Intent(getApplicationContext(), QuienEsMasAnonimoActivity.class);
+                startActivity(i);
+                */
+                Toast.makeText(getApplicationContext(), "Proximamente", Toast.LENGTH_SHORT).show();
             }
         });
 

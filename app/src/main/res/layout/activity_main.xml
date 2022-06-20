@@ -7,58 +7,64 @@
     tools:context=".activity.MainActivity">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:srcCompat="@tools:sample/avatars"
-            android:layout_marginTop="50dp"/>
+            android:layout_width="279dp"
+            android:layout_height="197dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/logo3d"
+            tools:srcCompat="@drawable/logo3d" />
 
         <Button
             android:id="@+id/bClassic"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Clasico"
+            android:layout_marginLeft="70dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="70dp"
-            android:layout_marginLeft="70dp"
-            />
+            android:background="@drawable/custom_button"
+            android:fontFamily="sans-serif"
+            android:text="Clasico" />
+
         <Button
             android:id="@+id/bVerdadReto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="verdad o reto"
+            android:layout_marginLeft="70dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="70dp"
-            android:layout_marginLeft="70dp"
-            />
+            android:background="@drawable/custom_button"
+            android:text="verdad o reto" />
 
         <Button
             android:id="@+id/bQEM"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Quien es mas"
+            android:layout_marginLeft="70dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="70dp"
-            android:layout_marginLeft="70dp"
-            />
+            android:background="@drawable/custom_button"
+            android:text="Quien es mas" />
 
         <Button
             android:id="@+id/bSend"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enviar tus preguntas"
+            android:layout_marginLeft="70dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="70dp"
-            android:layout_marginLeft="70dp"
-            />
+            android:background="@drawable/custom_button"
+            android:text="Enviar tus propuestas" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

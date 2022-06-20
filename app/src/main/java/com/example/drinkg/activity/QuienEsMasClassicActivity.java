@@ -10,10 +10,13 @@ import android.widget.TextView;
 
 import com.example.drinkg.R;
 
+import java.util.ArrayList;
+
 public class QuienEsMasClassicActivity extends AppCompatActivity {
     TextView tvExplicacion1, tvExplicacion2, tvQuestion;
     Button bContinuar, bEmpezar;
     ImageView ivQEMClassPersona, ivPersona1, ivPersona2, ivPersona3, ivPersona4;
+    ArrayList<String> quienEsMasArrayList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +33,7 @@ public class QuienEsMasClassicActivity extends AppCompatActivity {
         ivPersona2 = findViewById(R.id.ivQEMClassPersona2);
         ivPersona3= findViewById(R.id.ivQEMClassPersona3);
         ivPersona4 = findViewById(R.id.ivQEMClassPersona4);
+        quienEsMasArrayList = ListFunctions.getQuienEsMasString(getApplicationContext());
 
         /**
          * Siguiente Quien es mas, cambiando la pregunta y sacando de la lista la preguta ya realizada
@@ -38,7 +42,11 @@ public class QuienEsMasClassicActivity extends AppCompatActivity {
         bContinuar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                if (quienEsMasArrayList.size() != 0) {
+                    tvQuestion.setText(quienEsMasArrayList.remove(0));
+                } else {
+                    tvQuestion.setText(getResources().getString(R.string.no_more));
+                }
             }
         });
 
@@ -60,6 +68,8 @@ public class QuienEsMasClassicActivity extends AppCompatActivity {
 
                 tvQuestion.setVisibility(View.VISIBLE);
                 bContinuar.setVisibility(View.VISIBLE);
+
+                tvQuestion.setText(quienEsMasArrayList.remove(0));
             }
         });
     }

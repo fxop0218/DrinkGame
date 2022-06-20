@@ -11,10 +11,14 @@ import android.widget.TextView;
 
 import com.example.drinkg.R;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ClassicGameActivity extends AppCompatActivity {
     private TextView tvExp1, tvExp2, tvQuestion;
     private Button bContinue, bNext, bExit;
     private ImageView ivPersona1, ivPersona2, ivGlass1, ivGlass2, ivCorrect, ivNegative;
+    private ArrayList<String> classicGameList;
     //TODO poner una array o una lista con todas las pregutas
 
     @Override
@@ -36,6 +40,7 @@ public class ClassicGameActivity extends AppCompatActivity {
         ivGlass2 = findViewById(R.id.ivDrink2);
         ivCorrect = findViewById(R.id.ivPositive);
         ivNegative = findViewById(R.id.ivNegative);
+        classicGameList = ListFunctions.getClassicGame(getApplicationContext());
 
         bContinue.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,13 +59,19 @@ public class ClassicGameActivity extends AppCompatActivity {
                 tvQuestion.setVisibility(View.VISIBLE);
                 bNext.setVisibility(View.VISIBLE);
                 bExit.setVisibility(View.VISIBLE);
+                tvQuestion.setText(classicGameList.remove(0));
             }
         });
 
         bNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //TODO hacer que salte a la siguiente pregunta
+                if (classicGameList.size() != 0) {
+                    tvQuestion.setText(classicGameList.remove(0));
+                } else {
+                    tvQuestion.setText("");
+                    bNext.setEnabled(true);
+                }
             }
         });
 

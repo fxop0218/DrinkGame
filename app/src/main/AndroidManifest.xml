@@ -10,6 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DrinkG">
         <activity
+            android:name=".activity.ui.setUserActiviry"
+            android:exported="false" />
+        <activity
+            android:name=".activity.setUsersActivity"
+            android:exported="false"
+            android:label="@string/title_activity_set_users" />
+        <activity
             android:name=".activity.QuienEsMasAnonimoActivity"
             android:exported="false" />
         <activity
