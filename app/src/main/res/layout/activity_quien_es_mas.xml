@@ -51,7 +51,7 @@
                 android:gravity="center"
                 android:text="El jugador mas señalado sera el perdedor" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/bQeMClassic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
                 android:gravity="center"
                 android:text="tendreis que ir pasandos el movil y selecionando la persona mas probable" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/bQeMAnonimo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -133,7 +133,7 @@
                 android:gravity="center"
                 android:text="Cada uno desde su telefono tendra que selecionar la persona que creas que es mas probable que lo cumpla" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/bQeMOnline"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
