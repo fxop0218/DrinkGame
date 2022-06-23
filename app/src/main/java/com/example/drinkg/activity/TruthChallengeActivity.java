@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.drinkg.R;
 
@@ -15,12 +16,13 @@ import java.util.ArrayList;
 
 public class TruthChallengeActivity extends AppCompatActivity {
     Button bContinue, bTruth, bChallange, bChange, bNext;
-    TextView tvInformation1, tvInformation2, tvTruth, tvChallange, tvQuestion, tvTitle;
+    TextView tvInformation1, tvInformation2, tvTruth, tvChallange, tvQuestion, tvTitle, tvQuestionNumber;
     ImageView ivPersona, ivChange;
     ArrayList<String> truthArrayList;
     ArrayList<String> challangeArrayList;
     private boolean isUsed = false;
     private boolean isTruth = false;
+    private int questionNumber = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,7 @@ public class TruthChallengeActivity extends AppCompatActivity {
         tvInformation1 = findViewById(R.id.tvInfoTruth);
         tvInformation2 = findViewById(R.id.tvInfoTruth2);
         tvTruth = findViewById(R.id.tvVerdad);
+        tvQuestionNumber = findViewById(R.id.tvTruthNumberQuestion);
         tvQuestion = findViewById(R.id.tvTruthChallangeQuestion);
         tvTitle = findViewById(R.id.tvTruthChallengeTitleAct);
         tvChallange = findViewById(R.id.tvReto);
@@ -61,6 +64,8 @@ public class TruthChallengeActivity extends AppCompatActivity {
                 bTruth.setVisibility(View.VISIBLE);
                 bChallange.setVisibility(View.VISIBLE);
                 tvQuestion.setVisibility(View.VISIBLE);
+                tvQuestionNumber.setVisibility(View.VISIBLE);
+                setNumberQuestion();
             }
         });
 
@@ -100,11 +105,18 @@ public class TruthChallengeActivity extends AppCompatActivity {
         bNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setChallangeTruth();
-                tvTitle.setText(getResources().getString(R.string.verdad_o_reto_title));
-                bChange.setEnabled(true);
-                tvQuestion.setText(getResources().getString(R.string.truthChallangeInformation));
-                isUsed = false;
+                if (!challangeArrayList.isEmpty() && !truthArrayList.isEmpty()) {
+                    setChallangeTruth();
+                    tvTitle.setText(getResources().getString(R.string.verdad_o_reto_title));
+                    bChange.setEnabled(true);
+                    tvQuestion.setText(getResources().getString(R.string.truthChallangeInformation));
+                    setNumberQuestion();
+                    isUsed = false;
+                } else {
+                    bNext.setEnabled(false);
+                    bChange.setEnabled(false);
+                    tvQuestion.setText(getResources().getString(R.string.no_more));
+                }
             }
         });
     }
@@ -139,5 +151,10 @@ public class TruthChallengeActivity extends AppCompatActivity {
         } else {
             tvQuestion.setText(getResources().getString(R.string.no_more));
         }
+    }
+
+    private void setNumberQuestion() {
+        questionNumber++;
+        tvQuestionNumber.setText(getResources().getString(R.string.question_number) + " " + questionNumber);
     }
 }

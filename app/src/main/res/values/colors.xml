@@ -13,4 +13,5 @@
     <color name="auxiliar_sec_color">#245738</color>
     <color name="terciario">#FF2B19</color>
     <color name="drakula_color">#282a36</color>
+    <color name="enebled_false">#6B6B6B</color>
 </resources>

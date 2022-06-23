@@ -13,28 +13,152 @@
 
     <string-array name="classicGame">
         <item>Yo nunca me he cagado encima</item>
-        <item>yo nunca ejemplo</item>
-        <item>yo nunca ejemplo2</item>
-        <item>yo nunca ejemplo3</item>
+        <item>Yo nunca follaria con alguien de los presentes</item>
+        <item>Yo nunca he hecho un trio</item>
+        <item>Yo nunca he pillado a alguien masturbandose</item>
+        <item>Yo nunca he vomitado borracho</item>
+        <item>Yo nunca me he querido follar a alguien de esta sala</item>
+        <item>Yo nunca he hecho un 2pa</item>
+        <item>Yo nunca he conducido borracho</item>
+        <item>Yo nunca he follado estando borracho </item>
+        <item>Yo nunca he escapado de la poli </item>
+        <item>Yo nunca he follado en el agua</item>
+        <item>Yo nunca he pillado a alguien follando</item>
+        <item>Yo nunca me han pillado masturbandome</item>
+        <item>Yo nunca he llamado borracho a mi ex</item>
+        <item>Yo nunca he ido a una comida familiar de resaca</item>
+        <item>Yo nunca he ido a un sex shop</item>
+        <item>Yo nunca me han metido algo por el culo</item>
+        <item>Yo nunca he dado num/insta falso a alguien </item>
+        <item>A mi nunca me han pillado follando</item>
+        <item>Yo nunca he usado un juguete sexual</item>
+        <item>Yo nunca he tenido un sueño erotico con alguien de esta sala</item>
+        <item>Yo nunca he ido a clase/trabajo de empalmada</item>
+        <item>Yo nunca me he besado con alguien de mi mismo sexo</item>
+        <item>A mi nunca me han multado estando borracho</item>
+        <item>Yo nunca he hecho videollamada hot</item>
+        <item>Yo nunca he fingido un orgasmo</item>
+        <item>Yo nunca me han atado follando</item>
+        <item>Yo nunca he atado a alguien follando </item>
+        <item>Yo nunca he robado algo estando borracho </item>
+        <item>Yo nunca me he emborrachado con mi familia</item>
+        <item>Yo nunca he dicho que no volveria a beber</item>
+        <item>Yo nunca me liaria con alguien de esta sala</item>
+        <item>Yo nunca me gustaría ver desnudo a alguien de esta sala </item>
+        <item>Yo nunca he metido la mano en un vater publico para coger algo que se me habia caido</item>
+        <item>Yo nunca he robado un cubata </item>
+        <item>Yo nunca me he pegado con alguien </item>
+        <item>Yo nunca me han tenido que meter los dedos para vomitar</item>
+        <item>Yo nunca he metido los dedos a alguien para que vomite </item>
+        <item>Yo nunca he metido los dedos a alguien para que vomite </item>
+        <item>Yo nunca he mandado nudes</item>
+        <item>Yo nunca me he arrepentido de liarme con alguien</item>
+        <item>Yo nunca borraria de mi cabeza un lio</item>
+        <item>Yo nunca me he depilado y me he quedado con las ganas</item>
+        <item>Yo nunca me he liado con dos hermanas</item>
+        <item>Yo nunca se me ha roto el condon</item>
+        <item>Yo nunca me he liado con alguno de los presentes</item>
+        <item>Yo nunca he visto a alguno del grupo desnudo</item>
+        <item>Yo nunca me he grabado follando</item>
+        <item>Yo nunca he follado en el coche</item>
+        <item>Yo nunca me he sentido atraido por el novio de un amigo</item>
+        <item>Yo nunca he hecho algo sexual en el instituto</item>
+        <item>Yo nunca he intentado meterme un dedo por el culo</item>
+        <item>Yo nunca he intentado tocarme la polla con la lengua</item>
+
+        <!--TODO Que pregieres, ponr esto en otro sitio en el futuro-->
+
+        <item></item>
     </string-array>
     <string-array name="QEMGame">
-        <item>Quien es mas perro</item>
-        <item>Quien es mas gato</item>
-        <item>Quien es mas 1o</item>
-        <item>Quien es mas 2o</item>
+        <item>Quién es más probable que haga otros planes en lugar de quedar con los pibes</item>
+        <item>Quien es mas Gay / Pesado / proxeneta</item>
+        <item>Quien es más gay</item>
+        <item>Quien es más pesao</item>
     </string-array>
     <string-array name="verdadGame">
         <item>Quien a la persona mas mentirosa en esta sala</item>
-        <item>Ejemplo1</item>
-        <item>Ejemplo2</item>
+        <item>Que prefieres medir la mitad o pesar el doble</item>
+        <item>Que prefieres ser infiel o que te sean infiel</item>
+        <item>Que prefieres tener sexo durante 1 minuto o durante 3 horas</item>
+        <item>Con que dos personas de esta habitación harias un trio?</item>
+        <item>¿Cual ha sido tu racha de borrachera mas larga?</item>
+        <item>¿Con cuantas personas te has liado?</item>
+        <item>¿Has robado un cubata a alguien? </item>
+        <item>Peor experiencia sexual </item>
+        <item>Chica que mejor se lia segun tu experiencia</item>
+        <item>Anecdota de borrachera</item>
+        <item>Postura favorita</item>
+        <item>Persona mas mayor con la que te hayas liado</item>
+        <item>Peor cubata (de que era)</item>
+        <item>Algo de lo que te arrepientas que hayas hecho estando borracho </item>
+        <item>Porno mas raro que has visto</item>
+        <item>Mejor cubata (de que era)</item>
+        <item>Con que curas una resaca</item>
+        <item>Persona con la que te arrepientas de haberte liado</item>
+        <item>Tu ultimo sueño humedo </item>
+        <item>Persona que mas te atrae de la sala</item>
+        <item>¿Que es lo que mas te gusta hacer sexualmente? </item>
+        <item>¿Como fue tu primer lio?</item>
+        <item>Sitio mas raro donde hayas hecho cosas feas</item>
+        <item>Dos mentiras una verdad</item>
+        <item>Posicion favorita </item>
+        <item>¿Quien fue tu peor lio?</item>
+        <item>Mayor fantasia sexua</item>
+        <item>Persona por la que mas sentiste </item>
+        <item>¿Con que dos personas del grupo harias un trio?</item>
+        <item>¿Quién es tu actriz porno fav?</item>
+        <item>¿Quién es amor platonico?</item>
     </string-array>
     <string-array name="retoGame">
         <item>Quitate una prenda de ropa</item>
-        <item>Quitate una prenda de 1</item>
-        <item>Quitate una prenda de 2</item>
+        <item>Beso al más borracho</item>
+        <item>Beso a todas las mujeres presentes</item>
+        <item>Comer algo rojo de la nevera</item>
+        <item>Dibujar algo en el culo de la persona de la izquierda</item>
+        <item>Señalar quien la tiene mas grande y mas pequeña y no decir quien es quien</item>
+        <item>Beso al de la derecha</item>
+        <item>Cambiarte una prenda con el de la derecha</item>
+        <item>Beso a alguien de tu mismo sexo</item>
+        <item>Follar, casar y matar</item>
+        <item>Contar un sueño erotico </item>
+        <item>Enseñar la foto 10 de tu galeria </item>
+        <item>Indirecta para el resto de jugadores</item>
+        <item>Pasar el hielo con la boca al de la derecha</item>
+        <item>Pasar el hielo con la boca al de la izquierda</item>
+        <item>Impostor con chupitos</item>
+        <item>Cambiarte una prenda con el de la derecha</item>
+        <item>Beso en el cuello al de la izquierda</item>
+        <item>Beso en el cuello al de la derecha</item>
+        <item>Beso en el cuello al de la derecha</item>
+        <item>Encierrate 5 minutos con quien el resto elija</item>
+        <item>Beso al de la izquierda</item>
+        <item>Selfie grupal</item>
+        <item>Ronda de la botella</item>
+        <item>Quitarte una prenda</item>
+        <item>Pintale los labios al de enfrente</item>
+        <item>Haz 20 flexiones </item>
+        <item>Beso al menos borracho</item>
+        <item>Cara (beber) cruz (prenda)</item>
+        <item>Elegir a alguien para que os proponga un reto el resto </item>
+        <item>Beso en la cadera al de la derecha</item>
+        <item>Beso en la cadera al de la izquierda </item>
+        <item>Sin camiseta una ronda</item>
+        <item>Quitar una prenda con la boca al de la derecha</item>
+        <item>Quitar una prenda con la boca al de la izquierda</item>
+        <item>Chupito ombligo</item>
+        <item>Sant hilari(beberte todo lo que te queda del cubata) sin manos</item>
+        <item>Cerrar los ojos, que alguien te de un beso y adivinar</item>
+        <item>Cerrar los ojos, tocar alguna parte del cuerpo y adivinar</item>
+        <item>Tira el dado y bebe</item>
+        <item>Sentarte encima de alguien una ronda</item>
+        <item>Hablar con acento una ronda</item>
+        <item>Pon una norma durante toda la ronda</item>
+        <item>Todos cambio de sitios</item>
     </string-array>
     <string name="title_activity_set_users">setUsersActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="question_number">Pregunta numero: </string>
 </resources>

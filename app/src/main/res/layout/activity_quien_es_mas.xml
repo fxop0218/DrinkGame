@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.QuienEsMasActivity">
+    tools:context=".activity.QuienEsMasActivity"
+    android:background="@color/drakula_color">
 
     <ScrollView
         android:layout_width="400dp"
@@ -28,6 +29,7 @@
                 android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:text="Modo classico"
+                android:textColor="@android:color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -37,6 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
+                android:textColor="@android:color/darker_gray"
                 android:layout_marginRight="30dp"
                 android:gravity="center"
                 android:text="Saldra una pregunta, en la que tendreis que señalar a la persona que es mas probable que lo sea o realice." />
@@ -46,6 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
+                android:textColor="@android:color/darker_gray"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="30dp"
                 android:gravity="center"
@@ -55,6 +59,7 @@
                 android:id="@+id/bQeMClassic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="50dp"
@@ -66,6 +71,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
+                android:textColor="@android:color/white"
                 android:layout_marginRight="30dp"
                 android:gravity="center"
                 android:text="Modo anonimo"
@@ -78,6 +84,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
+                android:textColor="@android:color/darker_gray"
                 android:layout_marginRight="30dp"
                 android:gravity="center"
                 android:text="Saldra una pregunta en la que tendreis que selecionar a la persona que es mas probable que lo cumpla" />
@@ -87,6 +94,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
+                android:textColor="@android:color/darker_gray"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="30dp"
                 android:gravity="center"
@@ -98,6 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="20dp"
+                android:background="@drawable/custom_exit_button"
                 android:layout_marginRight="50dp"
                 android:text="Anonimo" />
 
@@ -106,6 +115,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
+                android:textColor="@android:color/white"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="30dp"
                 android:gravity="center"
@@ -119,6 +129,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
+                android:textColor="@android:color/darker_gray"
                 android:layout_marginRight="30dp"
                 android:gravity="center"
                 android:text="Saldra una pregunta en la que tendreis que responder quien es la persona que es mas porbable que lo cumpla" />
@@ -128,6 +139,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
+                android:textColor="@android:color/darker_gray"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="30dp"
                 android:gravity="center"
@@ -139,6 +151,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="20dp"
+                android:background="@drawable/custom_exit_button"
                 android:layout_marginRight="50dp"
                 android:text="Online" />
         </LinearLayout>

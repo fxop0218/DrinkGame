@@ -13,10 +13,11 @@ import com.example.drinkg.R;
 import java.util.ArrayList;
 
 public class ClassicGameActivity extends AppCompatActivity {
-    private TextView tvExp1, tvExp2, tvQuestion;
+    private TextView tvExp1, tvExp2, tvQuestion, tvQuestionNumber;
     private Button bContinue, bNext, bExit;
     private ImageView ivPersona1, ivPersona2, ivGlass1, ivGlass2, ivCorrect, ivNegative;
     private ArrayList<String> classicGameList;
+    private int questionNumber = 0;
     //TODO poner una array o una lista con todas las pregutas
 
     @Override
@@ -27,6 +28,7 @@ public class ClassicGameActivity extends AppCompatActivity {
         tvExp1 = findViewById(R.id.tvClassic1);
         tvExp2 = findViewById(R.id.tvClassic2);
         tvQuestion = findViewById(R.id.tvQuestion);
+        tvQuestionNumber = findViewById(R.id.tvClassicQuestionNumber);
 
         bContinue = findViewById(R.id.bContinueClassic);
         bExit = findViewById(R.id.bExitClassic);
@@ -57,6 +59,8 @@ public class ClassicGameActivity extends AppCompatActivity {
                 tvQuestion.setVisibility(View.VISIBLE);
                 bNext.setVisibility(View.VISIBLE);
                 bExit.setVisibility(View.VISIBLE);
+                setQuestionNumber();
+                tvQuestionNumber.setVisibility(View.VISIBLE);
                 tvQuestion.setText(classicGameList.remove(0));
             }
         });
@@ -66,9 +70,10 @@ public class ClassicGameActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (classicGameList.size() != 0) {
                     tvQuestion.setText(classicGameList.remove(0));
+                    setQuestionNumber();
                 } else {
-                    tvQuestion.setText("");
-                    bNext.setEnabled(true);
+                    tvQuestion.setText(getResources().getString(R.string.no_more));
+                    bNext.setEnabled(false);
                 }
             }
         });
@@ -79,5 +84,10 @@ public class ClassicGameActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    private void setQuestionNumber() {
+        questionNumber++;
+        tvQuestionNumber.setText(getResources().getString(R.string.question_number) + " " + questionNumber);
     }
 }

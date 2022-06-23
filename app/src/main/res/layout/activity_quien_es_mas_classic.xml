@@ -4,16 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.QuienEsMasClassicActivity">
+    tools:context=".activity.QuienEsMasClassicActivity"
+    android:background="@color/drakula_color">
 
     <TextView
         android:id="@+id/tvQMCquesstion"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
         android:text="TextView"
+        android:gravity="center"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/bQEMCcontinue"
         app:layout_constraintEnd_toEndOf="parent"
-        android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvQMCtitle" />
 
@@ -23,6 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
         android:text="Siguiente"
+        android:background="@drawable/custom_button"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,6 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
         android:text="Comenzar"
+        android:background="@drawable/custom_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -43,6 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:textColor="@android:color/white"
         android:text="¿Quien es mas? Classico"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -106,6 +115,7 @@
         android:layout_height="wrap_content"
         android:text="Señalar a la persona que sea  mas probable"
         app:layout_constraintBottom_toTopOf="@+id/ivQEMClassPersona1"
+        android:textColor="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -116,7 +126,23 @@
         android:layout_height="wrap_content"
         android:text="La persona señalada sera la perdedora"
         app:layout_constraintBottom_toTopOf="@+id/bQEMCcontinue"
+        android:textColor="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivQEMClassPersona3" />
+
+    <TextView
+        android:id="@+id/tvQeMClassicQuestionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        android:textSize="25sp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQMCtitle" />
 </androidx.constraintlayout.widget.ConstraintLayout>
