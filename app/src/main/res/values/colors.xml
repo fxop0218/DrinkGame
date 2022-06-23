@@ -7,7 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="primary_color">#FF018786</color>
-    <color name="secundaty_color">#FF000000</color>
-    <color name="auxiliar_color">#FFFFFFFF</color>
+    <color name="primary_color">#9afcb3</color>
+    <color name="secundaty_color">#50fa7b</color>
+    <color name="auxiliar_color">#FF7626</color>
+    <color name="auxiliar_sec_color">#245738</color>
+    <color name="terciario">#FF2B19</color>
+    <color name="drakula_color">#282a36</color>
 </resources>

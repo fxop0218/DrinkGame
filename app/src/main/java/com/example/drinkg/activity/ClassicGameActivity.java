@@ -2,7 +2,6 @@ package com.example.drinkg.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,7 +11,6 @@ import android.widget.TextView;
 import com.example.drinkg.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class ClassicGameActivity extends AppCompatActivity {
     private TextView tvExp1, tvExp2, tvQuestion;
